@@ -3,8 +3,9 @@ const setPosition = require('./setPosition');
 
 const moveRover = (landing, moves) => {
   const validMoves = utils.getValidMoves(moves);
+  const validLanding = utils.getValidLanding(landing);
 
-  if (landing.length === 0 || validMoves.length === 0) {
+  if (validLanding.length === 0 || validMoves.length === 0) {
     return console.log('Failed to move the Rover!!');
   }
 
