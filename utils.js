@@ -25,4 +25,12 @@ const defaultDirections = {
   east
 };
 
-module.exports = { defaultDirections };
+const getValidMoves = (moves) => {
+  const possibleMovesRegex = new RegExp(/[R|L|M.]/);
+  return moves.length > 0 ? moves.split('').filter(el => possibleMovesRegex.test(el)) : [];
+};
+
+module.exports = {
+  defaultDirections,
+  getValidMoves
+};

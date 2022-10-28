@@ -1,15 +1,16 @@
-const setDirection = require('./setDirection');
+const utils = require('./utils');
 const setPosition = require('./setPosition');
 
-const moveRover = (landing, instructions) => {
-  if (landing.length === 0 || instructions.length === 0) {
-    return console.log('You did not move!!');
+const moveRover = (landing, moves) => {
+  const validMoves = utils.getValidMoves(moves);
+
+  if (landing.length === 0 || validMoves.length === 0) {
+    return console.log('Failed to move the Rover!!');
   }
 
-  const destiny = setPosition(landing, instructions);
-  destiny[2] = setDirection(landing[2], instructions);
+  const result = setPosition(landing, validMoves);
 
-  console.log(destiny)
+  console.log(result);
 };
 
 moveRover([3,3,'E'], 'MRRMMRMRRM');
