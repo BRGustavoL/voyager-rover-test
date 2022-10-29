@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', 'Courier New', Courier, monospace;
+}
+
+.header {
+  position: relative;
+}
+
+.mars-background {
+  width: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+.bottom-centered {
+  position: absolute;
+  top: 80%;
+  left: 2%;
+}
+
+.centered-action {
+  cursor: pointer;
+  font-family: 'Bebas Neue';
+  font-size: 40px;
+  color: white;
+  transition: all 400ms;
+  text-decoration: none;
+}
+
+.centered-action:hover {
+  font-size: 42px;
+  color: #D76F3A;
+}
+
+.main-tittle {
+  color: white;
+  font-size: 120px;
+  text-shadow: 4px 6px #95633E;
+  font-family: 'Bebas Neue';
+}
+
+.under-tittle {
+  color: white;
+  font-size: 58px;
+  font-family: 'Bebas Neue';
+}
+
+.paragraph {
+  color: whitesmoke;
+  font-size: 24px;
+  max-width: 1000px;
+  font-family: 'Montserrat';
+}

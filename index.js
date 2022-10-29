@@ -14,4 +14,4 @@ const moveRover = (landing, moves) => {
   console.log(result);
 };
 
-moveRover([3,3,'E'], 'MRRMMRMRRM');
+moveRover([3,3,'E'], 'MRRMMRMRRM', 10, 10);
