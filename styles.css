@@ -5,8 +5,9 @@
   font-family: 'Roboto', 'Courier New', Courier, monospace;
 }
 
-.header {
+#header-content {
   position: relative;
+  display: block;
 }
 
 .mars-background {
@@ -17,6 +18,26 @@
   position: absolute;
   top: 2%;
   left: 2%;
+}
+
+.main-tittle {
+  color: white;
+  font-size: 120px;
+  text-shadow: 4px 6px #95633E;
+  font-family: 'Bebas Neue';
+}
+
+.under-tittle {
+  color: white;
+  font-size: 58px;
+  font-family: 'Bebas Neue';
+}
+
+.paragraph {
+  color: whitesmoke;
+  font-size: 24px;
+  max-width: 1000px;
+  font-family: 'Montserrat';
 }
 
 .bottom-centered {
@@ -39,22 +60,13 @@
   color: #D76F3A;
 }
 
-.main-tittle {
-  color: white;
-  font-size: 120px;
-  text-shadow: 4px 6px #95633E;
-  font-family: 'Bebas Neue';
-}
-
-.under-tittle {
-  color: white;
-  font-size: 58px;
-  font-family: 'Bebas Neue';
-}
-
 .paragraph {
   color: whitesmoke;
   font-size: 24px;
   max-width: 1000px;
   font-family: 'Montserrat';
+}
+
+#section-content {
+  height: 100vh;
 }
