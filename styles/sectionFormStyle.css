@@ -36,47 +36,10 @@
   font-family: 'Roboto';
 }
 
-label {
-  color: white;
-  font-size: 24px;
-  margin-bottom: 10px;
-  font-family: 'Roboto';
-}
-
 .form-input {
   display: flex;
   flex-direction: column;
   text-decoration: none;
-}
-
-input {
-  height: 26px;
-  font-size: 24px;
-  font-family: 'Roboto';
-  padding: 4px;
-}
-
-input:focus {
-  text-decoration: none;
-  outline: none;
-}
-
-select {
-  height: 38px;
-  font-size: 24px;
-  font-family: 'Roboto';
-  padding: 2px;
-}
-
-
-select:focus {
-  text-decoration: none;
-  outline: none;
-}
-
-input:focus {
-  text-decoration: none;
-  outline: none;
 }
 
 .move-rover-action {
@@ -93,12 +56,6 @@ input:focus {
 
 .move-rover-action:hover {
   background-color: #95633E;
-}
-
-legend {
-  color: white;
-  opacity: 0.8;
-  margin-top: 4px;
 }
 
 .result-content {
