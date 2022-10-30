@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
   <link rel="stylesheet" type="text/css" href="styles/headerStyle.css">
   <link rel="stylesheet" type="text/css" href="styles/sectionFormStyle.css">
@@ -14,7 +15,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-  <script src="setPosition.js"></script>
+  <script type="text/javascript" src="src/index.js"></script>
+  <script type="text/javascript" src="src/Rover.js"></script>
+  <script type="text/javascript" src="src/utils.js"></script>
 
   <title>Lost in MARS</title>
 </head>
@@ -22,7 +25,7 @@
   <header id="header-content">
     <a href="#header-content"></a>
     <figure>
-      <img class="mars-background" src="mars-background.jpg" alt="Man sitting on rock seeing Mars landscape">
+      <img class="mars-background" src="assets/mars-background.jpg" alt="Man sitting on rock seeing Mars landscape">
     </figure>
     <div class="centered">
       <h1 class="main-tittle">MISSION: LOST IN MARS</h1>
@@ -37,7 +40,7 @@
     <br>
     <br>
     This plateau, which is curiously rectangular, must be navigated by the rovers so that their on-board cameras can get a complete view of the surrounding terrain to send back to Earth.</p>
-    <h2 class="instructions-tittle">INSTRUCTIONS:</h2>
+    <h2 class="instructions-tittle">ROVER INSTRUCTIONS:</h2>
     <section class="section-content-instructions">
       <form id="form__submit" action="" class="instructions-form">
         <div class="base-form">
@@ -76,16 +79,14 @@
         </div>
         <br>
         <div class="form-input">
-          <div class="form-input">
-            <label for="instruction">Rover Instructions:</label>
-            <input type="text" id="instructions">
-            <legend>L = Rotate 90° to left</legend>
-            <legend>R = Rotate 90° to right</legend>
-            <legend>M = Move forward</legend>
-            <legend>Example: LMLMLMLMRMRMRM</legend>
-          </div>
+          <label for="instruction">Rover Instructions:</label>
+          <input type="text" id="instructions">
+          <legend>L = Rotate 90° to left</legend>
+          <legend>R = Rotate 90° to right</legend>
+          <legend>M = Move forward</legend>
+          <legend>Example: LMLMLMLMRMRMRM</legend>
         </div>
-        <input id="submit-action" class="move-rover-action" type="button" onclick="moveRover()" value="Land Rover">
+        <button id="submit-action" class="move-rover-action" type="submit" onclick="moveRover()">Move Rover</button>
       </form>
       <article class="result-content">
         <h2 class="instructions-tittle">Landing Position:</h2>
