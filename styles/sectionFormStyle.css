@@ -1,0 +1,107 @@
+#section-content {
+  height: 100vh;
+  background-color: black;
+  padding: 20px 40px;
+}
+
+.section-content-instructions {
+  display: flex;
+}
+
+.base-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side-inputs {
+  margin-right: 40px;
+}
+
+.objective-tittle {
+  color: white;
+  font-size: 58px;
+  font-family: 'Bebas Neue';
+}
+
+.instructions-tittle {
+  color: white;
+  font-size: 58px;
+  font-family: 'Bebas Neue';
+  margin-top: 40px;
+}
+
+.paragraph {
+  color: whitesmoke;
+  font-size: 24px;
+  max-width: 1000px;
+  font-family: 'Montserrat';
+}
+
+label {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'Montserrat';
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+input {
+  height: 26px;
+  font-size: 24px;
+  font-family: 'Montserrat';
+  padding: 4px;
+}
+
+input:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+select {
+  height: 38px;
+  font-size: 24px;
+  font-family: 'Montserrat';
+  padding: 2px;
+}
+
+
+select:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+input:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.move-rover-action {
+  margin-top: 10px;
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+  font-size: 40px;
+  font-family: 'Bebas Neue';
+  transition: all 400ms;
+}
+
+.move-rover-action:hover {
+  background-color: #95633E;
+}
+
+legend {
+  color: white;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.result-content {
+  margin-left: 40px;
+}
