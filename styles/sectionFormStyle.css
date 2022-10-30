@@ -33,15 +33,14 @@
 .paragraph {
   color: whitesmoke;
   font-size: 24px;
-  max-width: 1000px;
-  font-family: 'Montserrat';
+  font-family: 'Roboto';
 }
 
 label {
   color: white;
   font-size: 24px;
   margin-bottom: 10px;
-  font-family: 'Montserrat';
+  font-family: 'Roboto';
 }
 
 .form-input {
@@ -53,7 +52,7 @@ label {
 input {
   height: 26px;
   font-size: 24px;
-  font-family: 'Montserrat';
+  font-family: 'Roboto';
   padding: 4px;
 }
 
@@ -65,7 +64,7 @@ input:focus {
 select {
   height: 38px;
   font-size: 24px;
-  font-family: 'Montserrat';
+  font-family: 'Roboto';
   padding: 2px;
 }
 

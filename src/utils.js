@@ -1,10 +1,7 @@
-const HORIZONTALLIMIT_MESSAGE = 'Horizontal plateau limit reached!';
-const VERTICAL_LIMIT_MESSAGE = 'Vertical plateau limit reached!';
-
-const north = { L: 'W', R: 'E' };
-const south = { L: 'E', R: 'W' };
-const west = { L: 'S', R: 'N' };
-const east = { L: 'N', R: 'S' };
+const NORTH = { L: 'W', R: 'E' };
+const SOUTH = { L: 'E', R: 'W' };
+const WEST = { L: 'S', R: 'N' };
+const EAST = { L: 'N', R: 'S' };
 
 const directionTranslation = {
   'N': 'North',
@@ -27,9 +24,10 @@ const getValidLanding = (landing) => {
   return [];
 };
 
-const getValidMoves = (moves) => {
+const getValidMoves = (instructions) => {
   const possibleInstructions = new RegExp(/[R|L|M.]/);
-  return moves.length > 0 ? moves.split('').filter(el => possibleInstructions.test(el)) : [];
+  const moves = instructions.length > 0 ? instructions.split('').map(instruction => instruction.toUpperCase()) : [];
+  return moves.length > 0 ? moves.filter(el => possibleInstructions.test(el)) : [];
 };
 
 const renderCoordenates = (x, y, direction) => `
